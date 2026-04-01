@@ -1,0 +1,20 @@
+[tools]
+"cargo:cargo-spellcheck" = "latest"
+"cargo:topgrade" = "latest"
+editorconfig-checker = "latest"
+harper-cli = "latest"
+ollama = "latest"
+rust = "latest"
+typos = "latest"
+
+[tasks.typos]
+run = "typos"
+
+[tasks.cargo-spellcheck]
+run = "cargo spellcheck check"
+
+[tasks.harper]
+run = "harper-cli lint --user-dict-path .config/lingo.dic --dialect au --ignore OrthographicConsistency,UnclosedQuotes,UseTitleCase *.md ADR/R1/*.md"
+
+[tasks.check]
+depends = ["typos", "cargo-spellcheck", "harper"]
