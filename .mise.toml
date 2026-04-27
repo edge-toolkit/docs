@@ -8,6 +8,7 @@ editorconfig-checker = "latest"
 harper-cli = "latest"
 rust = "latest"
 typos = "latest"
+zig = "latest"
 
 [tasks]
 ec = "ec"
