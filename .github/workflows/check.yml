@@ -29,6 +29,11 @@ jobs:
         with:
           tool: mise
 
+      - name: Install LLVM and Clang needed for building cargo-spellcheck
+        uses: KyleMayes/install-llvm-action@v2
+        with:
+          version: "10.0"
+
       - name: Install mise tools
         run: |
           mise settings add idiomatic_version_file_enable_tools "[]"
