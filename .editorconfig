@@ -8,6 +8,19 @@ indent_style = space
 max_line_length = 120
 trim_trailing_whitespace = true
 
+[SKILL.md]
+max_line_length = 200
+
+[AGENTS.md]
+max_line_length = 300
+
+[CLAUDE.md]
+max_line_length = 300
+
 # Markdown files can have flexible indentation for lists
 [*.md]
 indent_size = unset
+
+[.cache.json]
+end_of_line = unset
+insert_final_newline = unset
