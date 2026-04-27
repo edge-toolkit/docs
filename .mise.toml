@@ -1,6 +1,7 @@
 [tools]
 "cargo:cargo-spellcheck" = "latest"
 "cargo:topgrade" = "latest"
+clang = "latest"
 dprint = "latest"
 editorconfig-checker = "latest"
 "github:decisiongraph/dg" = "latest"
