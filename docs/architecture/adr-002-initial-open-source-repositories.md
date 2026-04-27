@@ -1,8 +1,14 @@
-# ADR-0002: Initial Open Source Repositories
+---
+author: "jayvdb"
+code_paths: []
+date: 2026-03-18
+status: proposed
+tags: []
+---
 
-## Status
+# Initial Open Source Repositories
 
-Proposed
+<!-- Brief introduction: what this document is about -->
 
 ## Context
 
@@ -190,11 +196,3 @@ The open source repository is at <https://github.com/ThalesGroup/agilab>.
 
 fred & Agilab are both written in Python language, whereas this project requires
 compiled languages be used for the core components.
-
-## Author
-
-John Vandenberg
-
-## Date
-
-18 March 2026

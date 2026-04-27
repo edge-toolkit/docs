@@ -4,9 +4,10 @@
 
 This repository uses [`mise`](https://mise.jdx.dev/) for tool management and task definition.
 
-After installing `mise`, run `mise run check` to check the repository contents.
+After installing `mise`, run `mise run check` to check the repository contents.Decision Graph
 
-It currently exits with an error due to a bug in `harper-cli`.
+This repository uses [decision graph](https://decisiongraph.dev/) CLI to assist manage
+the documents here.
 
 ## Spelling and grammar
 

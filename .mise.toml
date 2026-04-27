@@ -1,20 +1,39 @@
 [tools]
 "cargo:cargo-spellcheck" = "latest"
 "cargo:topgrade" = "latest"
+dprint = "latest"
 editorconfig-checker = "latest"
+"github:decisiongraph/dg" = "latest"
 harper-cli = "latest"
-ollama = "latest"
 rust = "latest"
 typos = "latest"
 
-[tasks.typos]
-run = "typos"
-
-[tasks.cargo-spellcheck]
-run = "cargo spellcheck check"
-
-[tasks.harper]
-run = "harper-cli lint --user-dict-path .config/lingo.dic --dialect au --ignore OrthographicConsistency,UnclosedQuotes,UseTitleCase *.md ADR/R1/*.md"
+[tasks]
+ec = "ec"
+editorconfig-check = "ec"
+typos = "typos"
 
 [tasks.check]
-depends = ["typos", "cargo-spellcheck", "harper"]
+depends = ["ec", "cargo-spellcheck", "dg-check", "dprint-check", "harper", "typos"]
+
+[tasks.cargo-spellcheck]
+run = "cargo spellcheck check README.md docs/"
+
+[tasks.dprint-check]
+run = "dprint check"
+
+[tasks.dprint-check.env]
+DPRINT_CACHE_DIR = "/tmp/dprint-cache"
+
+[tasks.dprint-fmt]
+run = "dprint fmt"
+
+[tasks.harper]
+run = """
+harper-cli lint --user-dict-path .config/lingo.dic --dialect au \
+    --ignore OrthographicConsistency,UnclosedQuotes,UseTitleCase \
+    README.md docs/architecture/*.md
+"""
+
+[tasks.dg-check]
+run = "dg validate --pattern 'docs/architecture/*.md'"

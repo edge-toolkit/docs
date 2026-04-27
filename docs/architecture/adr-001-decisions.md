@@ -1,10 +1,17 @@
-# ADR-0001: Require architectural decision records for all development
+---
+id: ADR-001
+status: proposed
+date: 2026-03-18
+updated: 2026-04-24
+author: jayvdb
+tags: [architecture]
+---
 
-## Status
-
-Proposed
+# Require architectural decision records
 
 ## Context
+
+<!-- What is the issue that we're seeing that motivates this decision or change? -->
 
 The Curtin project requires a systematic approach to documenting architectural and significant technical decisions.
 Without a formal decision-making framework, knowledge about why certain architectural choices were made is lost over
@@ -18,6 +25,8 @@ reducing legal and licensing risks.
 
 ## Decision
 
+<!-- What is the change that we're proposing and/or doing? -->
+
 We will require that all significant architectural decisions, system design choices, and technical direction changes be
 documented using Architectural Decision Records (ADRs).
 
@@ -26,6 +35,8 @@ An ADR is a short text document that captures a single architectural decision in
 ## Consequences
 
 ### Positive
+
+<!-- What becomes easier or possible as a result of this change? -->
 
 - **Knowledge Preservation**: Decision rationale is preserved for future reference and context
 - **Communication**: Ensures all stakeholders understand the reasoning behind major decisions
@@ -39,11 +50,41 @@ An ADR is a short text document that captures a single architectural decision in
 
 ### Negative
 
+<!-- What becomes more difficult or impossible as a result of this change? -->
+
 - **Overhead**: Requires commitment to documenting decisions in addition to implementation
 - **Time Investment**: Initial setup and learning curve for the ADR format and process
 - **Maintenance**: Deprecated decisions must be marked as superseded to prevent confusion
 
-## Implementation Notes
+### Neutral
+
+<!-- What other effects does this change have? -->
+
+## Alternatives Considered
+
+<!--
+### Alternative 1: Option
+
+**Description:**
+
+**Pros:**
+-----
+
+**Cons:**
+-----
+
+**Why not chosen:**
+-->
+
+## References
+
+<!-- Links to relevant documentation, RFCs, prior art, etc. -->
+
+## Notes
+
+<!-- Any additional information, implementation notes, or follow-up items -->
+
+### Implementation Notes
 
 - Each ADR will be numbered sequentially starting from 0001, with a short name given to each.
 - ADRs should follow the standard template with Status, Context, Decision, Author, and Date.
@@ -55,11 +96,3 @@ An ADR is a short text document that captures a single architectural decision in
 - Decisions involving private or sensitive information should not be included in public ADRs.
 - Public ADRs should define public interfaces and contracts that enable private components to be constructed
   in separate private repositories.
-
-## Author
-
-John Vandenberg
-
-## Date
-
-18 March 2026

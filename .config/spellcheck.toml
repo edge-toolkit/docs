@@ -35,7 +35,6 @@ skip_os_lookups = true
 # for topic specific lingo.
 use_builtin = true
 
-
 [Hunspell.quirks]
 # Transforms words that are provided by the tokenizer
 # into word fragments based on the capture groups which are to
