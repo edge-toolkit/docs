@@ -6,8 +6,12 @@ This repository uses [`mise`](https://mise.jdx.dev/) for tool management and tas
 
 After installing `mise`, run `mise run check` to check the repository contents.Decision Graph
 
+## Architecture
+
 This repository uses [decision graph](https://decisiongraph.dev/) CLI to assist manage
 the documents here.
+
+The Architecture docs are located under [docs/architecture](docs/architecture).
 
 ## Spelling and grammar
 

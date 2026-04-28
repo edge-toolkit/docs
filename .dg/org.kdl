@@ -1,3 +1,23 @@
 org "edge-toolkit" {
     name "edge-toolkit"
 }
+
+user "jayvdb" {
+    name "John Vandenberg"
+    title "Research Associate"
+    email "jayvdb@gmail.com"
+    org "edge-toolkit"
+}
+
+user "pierre-tenedero" {
+    name "Pierre Tenedero"
+    title "Research Associate"
+    email "pierre.tenedero@gmail.com"
+    org "edge-toolkit"
+}
+
+user "jamesbychance" {
+    name "James Eggleston"
+    title "Research Fellow"
+    org "edge-toolkit"
+}

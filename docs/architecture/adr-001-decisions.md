@@ -1,8 +1,6 @@
 ---
-id: ADR-001
 status: proposed
 date: 2026-03-18
-updated: 2026-04-24
 author: jayvdb
 tags: [architecture]
 ---
