@@ -1,0 +1,50 @@
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: mise
+
+      - name: Install mise tools
+        run: |
+          mise settings add idiomatic_version_file_enable_tools "[]"
+          mise settings experimental=true
+          mise install
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Build site
+        run: dg site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .dg/site
+
+      - uses: actions/deploy-pages@v4
