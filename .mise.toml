@@ -37,5 +37,7 @@ harper-cli lint --user-dict-path .config/lingo.dic --dialect au \
 
 [tasks.dg-check]
 # Ignore some S rules that apply to README.md
-# U011 ignored as dg appears unable to resolve user identifiers
 run = "dg validate --skip S032,S010"
+
+[tasks.dg-build]
+run = "dg site"
