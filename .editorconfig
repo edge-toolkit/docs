@@ -8,6 +8,9 @@ indent_style = space
 max_line_length = 120
 trim_trailing_whitespace = true
 
+[schema.kdl]
+max_line_length = 250
+
 [SKILL.md]
 max_line_length = 200
 

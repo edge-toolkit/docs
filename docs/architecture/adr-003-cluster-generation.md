@@ -1,5 +1,4 @@
 ---
-id: ADR-003
 status: proposed
 date: 2026-04-28
 author: pierre-tenedero
@@ -13,7 +12,7 @@ tags: [architecture]
 `edge-toolkit` needs a standardised way to define scenarios through configuration files and reliably transform those
 definitions into runnable deployments.
 
-## Decisions
+## Decision
 
 We will introduce `et-cli` as a cluster generation tool that reads a scenario configuration (YAML) file and produces the
 corresponding deployment artifacts.
