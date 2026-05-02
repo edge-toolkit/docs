@@ -35,6 +35,8 @@ jobs:
           mise settings add idiomatic_version_file_enable_tools "[]"
           mise settings experimental=true
           mise install "github:decisiongraph/dg"
+          mise trust
+          echo "$HOME/.local/share/mise/shims" >> $GITHUB_PATH
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
