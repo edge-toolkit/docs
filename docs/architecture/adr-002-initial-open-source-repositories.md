@@ -1,8 +1,7 @@
 ---
-author: "jayvdb"
-code_paths: []
+author: jayvdb
 date: 2026-03-18
-status: proposed
+status: accepted
 tags: []
 ---
 
