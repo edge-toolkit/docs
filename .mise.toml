@@ -9,8 +9,8 @@ rust = "latest"
 typos = "latest"
 
 [tasks]
-ec = "ec"
-editorconfig-check = "ec"
+ec = "editorconfig-checker"
+editorconfig-check = "editorconfig-checker"
 typos = "typos"
 
 [tasks.check]
