@@ -1,8 +1,10 @@
 ---
 status: proposed
-date: 2026-03-18
 author: jayvdb
-tags: [architecture]
+date: 2026-03-18
+
+tags:
+  - architecture
 ---
 
 # Require architectural decision records

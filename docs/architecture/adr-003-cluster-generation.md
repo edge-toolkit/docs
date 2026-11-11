@@ -1,8 +1,10 @@
 ---
 status: proposed
-date: 2026-04-28
 author: pierre-tenedero
-tags: [architecture]
+date: 2026-04-28
+
+tags:
+  - architecture
 ---
 
 # Cluster Generation from Scenario Configuration Files

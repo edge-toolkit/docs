@@ -1,9 +1,7 @@
 ---
-author: "jayvdb"
-code_paths: []
-date: 2026-03-18
 status: proposed
-tags: []
+author: jayvdb
+date: 2026-03-18
 ---
 
 # Initial Open Source Repositories
@@ -59,8 +57,9 @@ are ready to provide additional governance.
 
 #### Licensing
 
-All repositories in this organisation must be dual licensed under MIT and Apache 2.0 licenses,
-with copyright assigned to Curtin University.
+All repositories in this organisation must be dual licensed under MIT and Apache 2.0 licenses.
+Contributors keep the copyright in their contributions and grant Curtin University a non-exclusive,
+sublicensable licence under the Contributor Agreement (POL-002).
 
 Each repository in this organisation will contain the following blurb in the `README.md`:
 
